@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+        environment {
+        PATH = "C:\\Program Files\\apache-maven-3.9.16\\bin;${env.PATH}"
+    }
+
     stages {
         stage('Checkout') {
             steps {
